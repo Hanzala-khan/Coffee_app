@@ -1,0 +1,190 @@
+/* Colors Pallate  ---> Elegant and classic */
+:root {
+    /* Colors */
+    --primary-color: #4B3832;
+    --secondary-color: #C9A66B;
+    --accent-color: #6B4E31;
+    --neutral-color: #FDF9F3;
+    --complementar-color: #8D5524;
+    /* fonts */
+    --primary-font: 'Lato',
+        sans-serif;
+    --secondary-font: 'Playfair Display',
+        serif;
+    ;
+    --commplementary-font: font-family: 'PT Serif Caption',
+        serif;
+}
+
+/* UNIFIED STYLING */
+* {
+    padding: 0%;
+    margin: 0%
+}
+
+/* STYLING MAIN CONTENT SECTION  */
+section.menu_content {
+    border-bottom: 4px solid var(--complementar-color);
+    margin-bottom: 6px;
+}
+
+main {
+    background-color: var(--primary-color) !important;
+    padding: 60px 0;
+}
+
+/* Styling  Main Contiainer*/
+div.container {
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2),
+        0 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+}
+
+/* Header Part Styling */
+header {
+    border-bottom: 4px solid var(--complementar-color);
+    padding-bottom: 15px;
+}
+
+header>h1 {
+    font-family: var(--primary-font);
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+header>p {
+    font-family: var(--commplementary-font);
+    font-family: var(--commplementary-font);
+    font-weight: bold;
+    /* border: 2px solid white; */
+    padding: 10px 0;
+}
+
+header>p>span {
+    background-color: var(--accent-color);
+    padding: 5px;
+    color: var(--neutral-color);
+}
+
+/* Styling Menu Content Section  */
+div.coffee_menu_list,
+div.coffee_menu_list_2 {
+    /* border: 2px soild red;
+    background-color: white; */
+    margin-bottom: 10px;
+}
+
+div.coffee_menu_list h2,
+div.coffee_menu_list_2 h2 {
+    /* border: 2px solid white; */
+    font-family: var(--secondary-font);
+    font-size: 2em;
+    padding: 0 0 5px 0;
+    color: var(--complementar-color);
+}
+
+div.coffee_menu_list>img,
+div.coffee_menu_list_2>img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--neutral-color);
+}
+
+div.coffee_menu_list table,
+div.coffee_menu_list_2 table {
+    text-align: justify;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.coffee_menu_list table td,
+div.coffee_menu_list table th,
+div.coffee_menu_list_2 table th,
+div.coffee_menu_list_2 table td {
+    padding: 10px 0;
+}
+
+div.coffee_menu_list table th:nth-child(2),
+div.coffee_menu_list_2 table th:nth-child(2) {
+    text-align: center;
+}
+
+div.coffee_menu_list table th,
+div.coffee_menu_list_2 table th {
+    font-size: 1.2em;
+    font-family: var(--primary-font);
+    color: var(--neutral-color);
+}
+
+div.coffee_menu_list table td:nth-child(2),
+div.coffee_menu_list_2 table td:nth-child(2) {
+    text-align: center;
+    background: var(--primary-color);
+    border-radius: 4px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-family: var(--secondary-font);
+}
+
+div.coffee_menu_list table td:nth-child(1),
+div.coffee_menu_list_2 table td:nth-child(1) {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
+/* CTA BUTTON DESIGN */
+
+div.CTA_btn>a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--neutral-color);
+    padding: 7px 5px;
+    outline: none;
+    color: var(--complementar-color);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.4 ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+div.CTA_btn>a:hover {
+    background-color: #8d5524;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* STYLING FOOTER  */
+footer {
+    background: var(--primary-color);
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+footer p {
+    color: white;
+    font-family: var(--secondary-font);
+}
+
+/* Media query  */
+
+
+@media screen and (max-width: 500px) {
+    /* div.container {
+        max-width: 90% !important;
+    } */
+}
+
+@media screen and (max-width: 900px) {
+    div.container {
+        max-width: 90% !important;
+    }
+}
